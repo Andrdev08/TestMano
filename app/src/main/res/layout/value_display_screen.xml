@@ -4,32 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:gravity="center">
+    android:gravity="right">
 
     <TextView
-        android:id="@+id/AED"
+        android:id="@+id/textAED"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingRight="10dp"
-        android:hint="@string/hint1"
+        android:hint="@string/text_AED_hint"
         android:textSize="48sp"/>
     <TextView
-        android:id="@+id/firstZero"
+        android:id="@+id/textBDPNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:hint="@string/hint2"
+        android:hint="@string/text_bdp_number_hint"
         android:textSize="48sp"/>
     <TextView
-        android:id="@+id/dot"
+        android:id="@+id/decimalPoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hint3"
+        android:hint="@string/text_dp_hint"
         android:textSize="48sp"/>
     <TextView
-        android:id="@+id/lastZero"
+        android:id="@+id/textADPNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hint4"
+        android:hint="@string/text_adp_number_hint"
         android:textSize="48sp"/>
+
 </LinearLayout>

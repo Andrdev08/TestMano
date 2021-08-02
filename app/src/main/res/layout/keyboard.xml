@@ -1,38 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <include
-        android:id="@+id/numberScreen"
-        layout="@layout/text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/numbers"/>
-
-    <TableLayout
-        android:id="@+id/numbers"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        app:layout_goneMarginTop="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberScreen"
-        android:gravity="fill">
-
-        <TableRow
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/numberScreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -40,91 +18,91 @@
 
             <TextView
                 android:id="@+id/btn1"
-                android:text="1"
+                android:text="@string/button_1"
                 android:gravity="center"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
 
             <TextView
                 android:id="@+id/btn2"
-                android:text="2"
+                android:text="@string/button_2"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
 
             <TextView
                 android:id="@+id/btn3"
-                android:text="3"
+                android:text="@string/button_3"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center">
 
             <TextView
-                android:id="@+id/btnFour"
-                android:text="4"
+                android:id="@+id/btn4"
+                android:text="@string/button_4"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
 
             <TextView
-                android:id="@+id/btnFive"
-                android:text="5"
+                android:id="@+id/btn5"
+                android:text="@string/button_5"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
 
             <TextView
-                android:id="@+id/btnSix"
-                android:text="6"
+                android:id="@+id/btn6"
+                android:text="@string/button_6"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -132,90 +110,95 @@
 
             <TextView
                 android:id="@+id/btn7"
-                android:text="7"
+                android:text="@string/button_7"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
 
             <TextView
                 android:id="@+id/btn8"
-                android:text="8"
+                android:text="@string/button_8"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onDigit"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
 
             <TextView
                 android:id="@+id/btn9"
-                android:text="9"
+                android:text="@string/button_9"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onDigit"
                 android:textSize="24dp"
-               />
-        </TableRow>
+                android:onClick="pressingKeyboard"
+                />
+        </LinearLayout>
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center">
 
             <TextView
-                android:id="@+id/btnDecimal"
-                android:text="."
+                android:id="@+id/btn0"
+                android:text="@string/button_0"
                 android:background="@drawable/buttom_background"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onDecimalPoint"
                 android:textSize="24dp"
+                android:onClick="pressingKeyboard"
                 />
 
-            <TextView
-                android:id="@+id/btnZero"
-                android:text="0"
-                android:background="@drawable/buttom_background"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onDigit"
-                android:textSize="24dp"
-                />
+        </LinearLayout>
 
-            <TextView
-                android:id="@+id/btnClear"
-                android:text="D"
-                android:background="@drawable/buttom_background"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onClear"
-                android:textSize="24sp"
-                />
-        </TableRow>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
 
-    </TableLayout>
+        <TextView
+            android:id="@+id/btnDecimal"
+            android:text="@string/button_decimal"
+            android:background="@drawable/buttom_background"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:onClick="pressingKeyboard"
+            />
+        <TextView
+            android:id="@+id/btnDelete"
+            android:text="@string/button_delete"
+            android:background="@drawable/buttom_background"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:onClick="pressingKeyboard"
+            />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

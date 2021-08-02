@@ -10,7 +10,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.example.keyboard"
+        applicationId "com.andrdev08.keyboard"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -33,11 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    buildFeatures
-            {
-                viewBinding = true
-            }
 }
 
 

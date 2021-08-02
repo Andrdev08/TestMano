@@ -1,8 +1,24 @@
 <resources>
     <string name="app_name">keyboard</string>
-    
-    <string name="hint1">AED</string>
-    <string name="hint2">0</string>
-    <string name="hint3">.</string>
-    <string name="hint4">00</string>
+
+    //value display
+    <string name="text_AED_hint">AED</string>
+    <string name="text_bdp_number_hint">0</string>
+    <string name="text_dp_hint">.</string>
+    <string name="text_adp_number_hint">00</string>
+
+    //keyboard
+    <string name="button_0">0</string>
+    <string name="button_1">1</string>
+    <string name="button_2">2</string>
+    <string name="button_3">3</string>
+    <string name="button_4">4</string>
+    <string name="button_5">5</string>
+    <string name="button_6">6</string>
+    <string name="button_7">7</string>
+    <string name="button_8">8</string>
+    <string name="button_9">9</string>
+    <string name="button_decimal">.</string>
+    <string name="button_delete">D</string>
+
 </resources>

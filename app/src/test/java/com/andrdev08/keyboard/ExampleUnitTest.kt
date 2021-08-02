@@ -1,4 +1,4 @@
-package com.example.keyboard
+package com.andrdev08.keyboard
 
 import org.junit.Test
 
