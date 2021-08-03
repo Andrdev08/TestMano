@@ -1,4 +1,4 @@
-package com.andrdev08.keyboard
+package com.andrdev08.testTask
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

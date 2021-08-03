@@ -1,4 +1,4 @@
-package com.andrdev08.keyboard
+package com.andrdev08.testTask
 
 import org.junit.Test
 
